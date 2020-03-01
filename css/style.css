@@ -2708,7 +2708,7 @@ h6 {
 	right: 20px;
 }
 .main_btn {
-	padding: 0 40px;
+	padding: 0 20px;
 	background: #a7cb00;
 	z-index: 2;
 	display: inline-block;
@@ -2720,7 +2720,7 @@ h6 {
 	font-size: 14px;
 	font-weight: 600;
 	font-family: raleway, sans-serif;
-	line-height: 48px;
+	line-height: 40px;
 	border: 1px solid #a7cb00;
 	border-radius: 5px;
 	-webkit-transition: all 300ms linear 0s;
@@ -3017,6 +3017,7 @@ h6 {
 }
 .project_area {
 	overflow: hidden;
+	background: #f9f9ff;
 }
 .project_item {
 	position: relative;
