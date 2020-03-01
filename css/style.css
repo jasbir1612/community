@@ -2126,7 +2126,7 @@ h6 {
 	border: none;
 	outline: none;
 	background: #f9f9ff;
-	padding: 0 20px;
+	padding: 0 8px;
 }
 .single-input:focus {
 	outline: none;
@@ -2154,7 +2154,7 @@ h6 {
 	border: none;
 	outline: none;
 	background: #f9f9ff;
-	padding: 0 20px;
+	padding: 0 8px;
 	height: 100px;
 	resize: none;
 }
