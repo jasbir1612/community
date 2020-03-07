@@ -102,9 +102,7 @@
 									</ul>
 								</li> -->
 								<li class="nav-item submenu dropdown">
-									<a
-										href="blog.html"
-										class="nav-link"
+									<a href="blog.html" class="nav-link"
 										>Blog</a
 									>
 								</li>
@@ -142,7 +140,10 @@
 			</div>
 		</header>
 
-		<section style="background-image:url(img/slider/contact.jpg); background-repeat: no-repeat; background-size:cover"  class="banner_area">
+		<section
+			style="background-image:url(img/slider/contact.jpg); background-repeat: no-repeat; background-size:cover"
+			class="banner_area"
+		>
 			<div class="banner_inner d-flex align-items-center">
 				<div class="container">
 					<div class="banner_content">
@@ -172,25 +173,27 @@
 					<div class="col-lg-7">
 						<form
 							class="row contact_form"
-							id="contactForm"
-							novalidate="novalidate"
+							id="mc-embedded-subscribe-form"
+							name="mc-embedded-subscribe-form"
+							action="https://upres.us19.list-manage.com/subscribe/post?u=6b810e6502f99fcd6afe3aa67&amp;id=79914abafe"
+							method="POST"
 						>
 							<div class="col-md-10">
 								<div class="form-group">
 									<input
 										type="text"
-										class="single-input"
-										id="name"
-										name="name"
+										class="single-input required"
 										placeholder="Enter your name"
+										name="FNAME"
+										id="mce-FNAME"
 									/>
 								</div>
 								<div class="form-group">
 									<input
 										type="email"
 										class="single-input"
-										id="email"
-										name="email"
+										id="mce-EMAIL"
+										name="EMAIL"
 										placeholder="Enter email address"
 									/>
 								</div>
@@ -198,8 +201,8 @@
 									<input
 										type="number"
 										class="single-input"
-										id="number"
-										name="number"
+										id="mce-PHONE"
+										name="PHONE"
 										placeholder="Enter mobile number"
 									/>
 								</div>
@@ -207,30 +210,51 @@
 									<input
 										type="text"
 										class="single-input"
-										id="organisation"
-										name="organisation"
+										id="mce-MMERGE2"
+										name="MMERGE2"
 										placeholder="Enter organisation name"
 									/>
 								</div>
 								<div class="form-group">
-									<select class="single-input" style="height: 40px">
-										<option value="Restaurant">Restaurant</option>
-										<option value="Investor">Investor</option>
+									<select
+										class="single-input"
+										style="height: 40px"
+										name="MMERGE3"
+										id="mce-MMERGE3"
+									>
+										<option value="Restaurant"
+											>Restaurant</option
+										>
+										<option value="Investor"
+											>Investor</option
+										>
 									</select>
 								</div>
 								<div class="form-group">
 									<textarea
 										class="single-textarea"
-										name="message"
-										id="message"
+										name="MMERGE5"
+										id="mce-MMERGE5"
 										rows="1"
-										placeholder="Enter Message"
+										placeholder="Enter Query/Message/Comments..."
 									></textarea>
+								</div>
+								<div
+									style="position: absolute; left: -5000px;"
+									aria-hidden="true"
+								>
+									<input
+										type="text"
+										name="b_6b810e6502f99fcd6afe3aa67_79914abafe"
+										tabindex="-1"
+										value=""
+									/>
 								</div>
 								<button
 									type="submit"
 									value="submit"
 									class="btn submit_btn"
+									id="mc-embedded-subscribe"
 								>
 									Send Message
 								</button>
@@ -252,9 +276,7 @@
 							<div class="info_item">
 								<i class="lnr lnr-envelope"></i>
 								<h6>
-									<a href="#"
-										>info@foodcham.com</a
-									>
+									<a href="#">info@foodcham.com</a>
 								</h6>
 								<p>Send us your query anytime!</p>
 							</div>
@@ -566,6 +588,33 @@
 			data-cf-settings="e0e95c77517101d219135a0e-|49"
 			defer=""
 		></script>
+		<!-- <script type="text/javascript">
+			$('#mc-embedded-subscribe-form').submit(function(e){
+				e.preventDefault();
+				// var formData = {
+				// 	"FNAME" : $('#mce-FNAME').val(),
+				// 	"EMAIL": $('#mce-EMAIL').val(),
+				// 	"PHONE" : $('#mce-PHONE').val(),
+				// 	"MMERGE2" : $('#mce-MMERGE2').val(),
+				// 	"MMERGE3" : $('#mce-MMERGE3').val(),
+				// 	"MMERGE5" : $('#mce-MMERGE5').val(),
+				// }
+				var formData = $(this).serialize();
+				$.ajax({
+		            type        : 'POST', // define the type of HTTP verb we want to use (POST for our form)
+		            url         : 'https://upres.us19.list-manage.com/subscribe/post?u=6b810e6502f99fcd6afe3aa67&amp;id=79914abafe', // the url where we want to POST
+		            data        : formData, // our data object
+		            dataType    : 'json', // what type of data do we expect back from the server
+		            encode          : true
+		        }).done(function(data) {
+
+                	// log data to the console so we can see
+                	console.log(data); 
+
+                	// here we will handle errors and validation messages
+            	});
+			})
+		</script> -->
 	</body>
 
 	<!-- Mirrored from colorlib.com/preview/theme/occupy/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 20 Feb 2020 18:51:39 GMT -->
