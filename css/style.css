@@ -3356,3 +3356,18 @@ h6 {
 .footer-bottom .footer-social a:hover {
 	color: #a7cb00;
 }
+
+.project_know_inner{
+	width:40%; 
+	background: #a7cb00; 
+	padding:32px;
+}
+
+@media (max-width: 769px){
+	.home_banner_area{
+		height: 100%
+	}
+	.project_know_inner{
+		width: 100%
+	}
+}
