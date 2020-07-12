@@ -1013,12 +1013,12 @@ button:focus {
 	margin-top: 20px;
 	margin-bottom: 30px;
 	padding: 24px 35px 24px 30px;
-	background-color: #fff;
+	background-color: #4c6376;
 	-webkit-box-shadow: -20.84px 21.58px 30px 0 rgba(176, 176, 176, 0.1);
 	box-shadow: -20.84px 21.58px 30px 0 rgba(176, 176, 176, 0.1);
 	font-size: 14px;
 	line-height: 24px;
-	color: #777;
+	color: #fff;
 	font-style: italic;
 }
 .single-post-area .arrow {
