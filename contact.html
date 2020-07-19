@@ -173,10 +173,6 @@
 					<div class="col-lg-7">
 						<form
 							class="row contact_form"
-							id="mc-embedded-subscribe-form"
-							name="mc-embedded-subscribe-form"
-							action="https://upres.us19.list-manage.com/subscribe/post?u=6b810e6502f99fcd6afe3aa67&amp;id=79914abafe"
-							method="POST"
 						>
 							<div class="col-md-10">
 								<div class="form-group">
@@ -185,14 +181,14 @@
 										class="single-input required"
 										placeholder="Enter your name"
 										name="FNAME"
-										id="mce-FNAME"
+										id="FNAME"
 									/>
 								</div>
 								<div class="form-group">
 									<input
 										type="email"
 										class="single-input"
-										id="mce-EMAIL"
+										id="EMAIL"
 										name="EMAIL"
 										placeholder="Enter email address"
 									/>
@@ -201,7 +197,7 @@
 									<input
 										type="number"
 										class="single-input"
-										id="mce-PHONE"
+										id="PHONE"
 										name="PHONE"
 										placeholder="Enter mobile number"
 									/>
@@ -210,7 +206,7 @@
 									<input
 										type="text"
 										class="single-input"
-										id="mce-MMERGE2"
+										id="MMERGE2"
 										name="MMERGE2"
 										placeholder="Enter organisation name"
 									/>
@@ -220,7 +216,7 @@
 										class="single-input"
 										style="height: 40px"
 										name="MMERGE3"
-										id="mce-MMERGE3"
+										id="MMERGE3"
 									>
 										<option value="Restaurant"
 											>Restaurant</option
@@ -234,7 +230,7 @@
 									<textarea
 										class="single-textarea"
 										name="MMERGE5"
-										id="mce-MMERGE5"
+										id="MMERGE5"
 										rows="1"
 										placeholder="Enter Query/Message/Comments..."
 									></textarea>
@@ -251,10 +247,9 @@
 									/>
 								</div>
 								<button
-									type="submit"
-									value="submit"
 									class="btn submit_btn"
-									id="mc-embedded-subscribe"
+									id="submit_btn"
+									onclick="handleSubmit(event)"
 								>
 									Send Message
 								</button>
@@ -322,7 +317,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="col-lg-3 col-md-6 col-sm-6">
+<!-- 					<div class="col-lg-3 col-md-6 col-sm-6">
 						<div class="single-footer-widget instafeed">
 							<h6 class="footer_title">Career</h6>
 							<div id="mc_embed_signup">
@@ -352,7 +347,7 @@
 								</form>
 							</div> 	
 						</div>
-					</div>
+					</div> -->
 				</div>
 			</div>
 			<div class="border_line"></div>
@@ -362,11 +357,8 @@
 				>
 					<p class="col-lg-8 col-md-8 footer-text m-0">
 						Copyright &copy;
-						<script type="cc5aba3be202cc1b0f07b929-text/javascript">
-							document.write(new Date().getFullYear());
-						</script>
+						2020 
 						All rights reserved | Foodcham Technologies Private Limited
-						>
 					</p>
 				</div>
 			</div>
@@ -410,138 +402,70 @@
 			</div>
 		</div>
 
-		<script
-			src="js/jquery-3.2.1.min.js"
-			type="e0e95c77517101d219135a0e-text/javascript"
-		></script>
-		<script
-			src="js/popper.js"
-			type="e0e95c77517101d219135a0e-text/javascript"
-		></script>
-		<script
-			src="js/bootstrap.min.js"
-			type="e0e95c77517101d219135a0e-text/javascript"
-		></script>
-		<script
-			src="js/stellar.js"
-			type="e0e95c77517101d219135a0e-text/javascript"
-		></script>
-		<script
-			src="vendors/lightbox/simpleLightbox.min.js"
-			type="e0e95c77517101d219135a0e-text/javascript"
-		></script>
-		<script
-			src="vendors/nice-select/js/jquery.nice-select.min.js"
-			type="e0e95c77517101d219135a0e-text/javascript"
-		></script>
-		<script
-			src="vendors/isotope/imagesloaded.pkgd.min.js"
-			type="e0e95c77517101d219135a0e-text/javascript"
-		></script>
-		<script
-			src="vendors/isotope/isotope-min.js"
-			type="e0e95c77517101d219135a0e-text/javascript"
-		></script>
-		<script
-			src="vendors/owl-carousel/owl.carousel.min.js"
-			type="e0e95c77517101d219135a0e-text/javascript"
-		></script>
-		<script
-			src="js/jquery.ajaxchimp.min.js"
-			type="e0e95c77517101d219135a0e-text/javascript"
-		></script>
-		<script
-			src="js/mail-script.js"
-			type="e0e95c77517101d219135a0e-text/javascript"
-		></script>
-		<script
-			src="vendors/counter-up/jquery.waypoints.min.js"
-			type="e0e95c77517101d219135a0e-text/javascript"
-		></script>
-		<script
-			src="vendors/counter-up/jquery.counterup.js"
-			type="e0e95c77517101d219135a0e-text/javascript"
-		></script>
-		<script
-			src="vendors/popup/jquery.magnific-popup.min.js"
-			type="e0e95c77517101d219135a0e-text/javascript"
-		></script>
-		<script
-			src="vendors/swiper/js/swiper.min.js"
-			type="e0e95c77517101d219135a0e-text/javascript"
-		></script>
+		<!-- The core Firebase JS SDK is always required and must be listed first -->
+		<script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-firestore.js"></script>
 
-		<script
-			src="js/jquery.form.js"
-			type="e0e95c77517101d219135a0e-text/javascript"
-		></script>
-		<script
-			src="js/jquery.validate.min.js"
-			type="e0e95c77517101d219135a0e-text/javascript"
-		></script>
-		<script
-			src="js/contact.js"
-			type="e0e95c77517101d219135a0e-text/javascript"
-		></script>
+		<!-- TODO: Add SDKs for Firebase products that you want to use
+		     https://firebase.google.com/docs/web/setup#available-libraries -->
+		<script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-analytics.js"></script>
 
-		<script
-			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"
-			type="e0e95c77517101d219135a0e-text/javascript"
-		></script>
-		<script
-			src="js/gmaps.min.js"
-			type="e0e95c77517101d219135a0e-text/javascript"
-		></script>
-		<script
-			src="js/theme.js"
-			type="e0e95c77517101d219135a0e-text/javascript"
-		></script>
-
-		<script
-			async
-			src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"
-			type="e0e95c77517101d219135a0e-text/javascript"
-		></script>
-		<script type="e0e95c77517101d219135a0e-text/javascript">
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
-
-			gtag('config', 'UA-23581568-13');
+		<script>
+		  // Your web app's Firebase configuration
+		  var firebaseConfig = {
+		    apiKey: "AIzaSyDHK3rpYqNFDxwwtZNd3e6v1tlustF8dKw",
+		    authDomain: "upres-f2940.firebaseapp.com",
+		    databaseURL: "https://upres-f2940.firebaseio.com",
+		    projectId: "upres-f2940",
+		    storageBucket: "upres-f2940.appspot.com",
+		    messagingSenderId: "189953698379",
+		    appId: "1:189953698379:web:2f2c67d6c6f2a58e3e7bce",
+		    measurementId: "G-F9ZK9HKG9H"
+		  };
+		  // Initialize Firebase
+		  firebase.initializeApp(firebaseConfig);
+		  firebase.analytics();
 		</script>
+		<script type="text/javascript">
+			// Add a new document in collection "cities"
+			function handleSubmit(e){
+				document.getElementById('submit_btn').setAttribute("disabled", "")
+				document.getElementById('submit_btn').innerText = "Sending..."
+
+				e.preventDefault();
+				console.log('form submit click')
+				const db = firebase.firestore()
+				db.collection("contact").add({
+					name: document.getElementById('FNAME').value,
+					email: document.getElementById('EMAIL').value,
+					phone: document.getElementById('PHONE').value,
+					organisation: document.getElementById('MMERGE2').value,
+					type: document.getElementById('MMERGE3').value,
+					message: document.getElementById('MMERGE5').value
+				})
+				.then((data) => {
+					document.getElementById('submit_btn').innerText = "Sent"
+					document.getElementById('submit_btn').removeAttribute("disabled")
+				})
+				.catch((err) => {
+					document.getElementById('submit_btn').innerText = "Send Message"
+					document.getElementById('submit_btn').removeAttribute("disabled")
+				});
+			}
+			
+
+		</script>
+
+		<script src="js/jquery-3.2.1.min.js"></script>
+		<script src="js/popper.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+		<script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
+		<script src="js/theme.js"></script>
+		<script src="vendors/swiper/js/swiper.min.js"></script>
 		<script
-			src="../../../../ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js"
-			data-cf-settings="e0e95c77517101d219135a0e-|49"
+			src="ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js"
 			defer=""
 		></script>
-		<!-- <script type="text/javascript">
-			$('#mc-embedded-subscribe-form').submit(function(e){
-				e.preventDefault();
-				// var formData = {
-				// 	"FNAME" : $('#mce-FNAME').val(),
-				// 	"EMAIL": $('#mce-EMAIL').val(),
-				// 	"PHONE" : $('#mce-PHONE').val(),
-				// 	"MMERGE2" : $('#mce-MMERGE2').val(),
-				// 	"MMERGE3" : $('#mce-MMERGE3').val(),
-				// 	"MMERGE5" : $('#mce-MMERGE5').val(),
-				// }
-				var formData = $(this).serialize();
-				$.ajax({
-		            type        : 'POST', // define the type of HTTP verb we want to use (POST for our form)
-		            url         : 'https://upres.us19.list-manage.com/subscribe/post?u=6b810e6502f99fcd6afe3aa67&amp;id=79914abafe', // the url where we want to POST
-		            data        : formData, // our data object
-		            dataType    : 'json', // what type of data do we expect back from the server
-		            encode          : true
-		        }).done(function(data) {
-
-                	// log data to the console so we can see
-                	console.log(data); 
-
-                	// here we will handle errors and validation messages
-            	});
-			})
-		</script> -->
 	</body>
-
-	<!-- Mirrored from colorlib.com/preview/theme/occupy/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 20 Feb 2020 18:51:39 GMT -->
 </html>
